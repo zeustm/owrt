@@ -81,6 +81,7 @@ fi
 echo -e "${YELLOW} 1.${NC} ${CYAN} Install Passwall 1 ${NC}"
 echo -e "${YELLOW} 2.${NC} ${CYAN} Install Passwall 2 ( Requires a +256 MB RAM )${NC}"
 echo -e "${YELLOW} 3.${NC} ${YELLOW} CloudFlare IP Scanner ${NC}"
+echo -e "${YELLOW} 7.${NC} ${CYAN} Install Passwall 1 without tafkik ${NC}"
 echo -e "${YELLOW} 6.${NC} ${RED} EXIT ${NC}"
 echo ""
 
@@ -156,6 +157,18 @@ opkg install luci-app-passwall2
 
            read -s -n 1
            ;;
+
+7)
+
+echo "Installing Passwall 1 without tafkik ..."
+
+sleep 2
+
+rm -f passwall_1_without_Tafkik.sh && wget https://raw.githubusercontent.com/zeustm/owrt/main/passwall_1_without_Tafkik.sh && chmod 777 passwall_1_without_Tafkik.sh && sh passwall_1_without_Tafkik.sh
+
+
+;;
+
 
  *)
            echo "  Invalid option Selected ! "
