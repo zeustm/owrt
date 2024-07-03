@@ -8,7 +8,7 @@ Done !
 
 v 1  without tafkik
 ```
-rm -f passwall_1_without_Tafkik.sh && wget https://raw.githubusercontent.com/zeustm/owrt/main/passwall_1_without_Tafkik.sh && chmod 777 passwall_1_without_Tafkik.sh && sh passwall_1_without_Tafkik.sh
+rm -f tafkik.sh && wget https://raw.githubusercontent.com/zeustm/owrt/main/tafkik.sh && chmod 777 tafkik.sh && sh tafkik.sh
 ```
 # Help
 
